@@ -37,7 +37,7 @@ module Nailtrap.Event {
 
     export class EnemiesAdvanceEvent implements IEvent {
         public simulate(board: IBoard) {
-            board.enemies.forEach(enemy => enemy.advanced());
+            board.enemies.forEach(enemy => enemy.advanced(board));
         }
     }
 }
